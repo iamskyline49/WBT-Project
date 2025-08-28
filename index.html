@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu - Skyline Coffee Shop</title>
+    <link rel="stylesheet" href="../WBT-Project/CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="welcome-box">
+        <img
+          src="../WBT-Project/Images/Brown Modern Circle Coffee Shop Logo.png"
+          alt="Cafe Logo"
+          class="logo"
+        />
+        <h2>Welcome to Skyline Coffee Shop</h2>
+        <p>Explore our delicious menu and join us to place your order!</p>
+        <div class="action-buttons">
+          <button
+            onclick="window.location.href='../WBT-Project/HTML/Login.html'"
+            class="btn"
+          >
+            Login
+          </button>
+          <button
+            onclick="window.location.href='../WBT-Project/HTML/Register.html'"
+            class="btn"
+          >
+            Register
+          </button>
+        </div>
+        <h3>Our Menu</h3>
+        <div class="menu-section">
+          <table id="menu-table">
+            <thead>
+              <tr>
+                <th>Photo</th>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price (BDT)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="../WBT-Project/Images/coffee.png"
+                    alt="Coffee"
+                    class="menu-img"
+                  />
+                </td>
+                <td>Coffee</td>
+                <td>Rich, aromatic espresso blend</td>
+                <td>180</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../WBT-Project/Images/Tea.png"
+                    alt="Tea"
+                    class="menu-img"
+                  />
+                </td>
+                <td>Tea</td>
+                <td>Classic milk tea</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../WBT-Project/Images/Latte.png"
+                    alt="Latte"
+                    class="menu-img"
+                  />
+                </td>
+                <td>Latte</td>
+                <td>Creamy espresso with steamed milk</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../WBT-Project/Images/Croissant.png"
+                    alt="Croissant"
+                    class="menu-img"
+                  />
+                </td>
+                <td>Croissant</td>
+                <td>Freshly baked croissants</td>
+                <td>220</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <footer class="footer">
+          <p>Skyline Coffee Shop - Where Every Sip Tells a Story</p>
+        </footer>
+      </div>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

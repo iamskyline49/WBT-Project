@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Provide Feedback - Skyline Coffee Shop</title>
+    <link rel="stylesheet" href="../CSS/customer-feedback.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="feedback-box">
+        <img
+          src="../Images/Brown Modern Circle Coffee Shop Logo.png"
+          alt="Cafe Logo"
+          class="logo"
+        />
+        <h2>Provide Feedback</h2>
+        <p>Share your experience with us!</p>
+        <form id="feedback-form">
+          <div class="form-group">
+            <label for="rating">Rating</label>
+            <div class="star-rating">
+              <input
+                type="radio"
+                name="rating"
+                id="star5"
+                value="5"
+                required
+              /><label for="star5">★</label>
+              <input type="radio" name="rating" id="star4" value="4" /><label
+                for="star4"
+                >★</label
+              >
+              <input type="radio" name="rating" id="star3" value="3" /><label
+                for="star3"
+                >★</label
+              >
+              <input type="radio" name="rating" id="star2" value="2" /><label
+                for="star2"
+                >★</label
+              >
+              <input type="radio" name="rating" id="star1" value="1" /><label
+                for="star1"
+                >★</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+        <div class="links">
+          <a href="../HTML/customer-order.html">Back to Menu</a>
+        </div>
+        <footer class="footer">
+          <p>Skyline Coffee Shop - Where Every Sip Tells a Story</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

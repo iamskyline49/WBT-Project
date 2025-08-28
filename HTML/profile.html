@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Skyline Coffee Shop</title>
+    <link rel="stylesheet" href="../CSS/profile.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-box">
+        <img
+          src="../Images/Brown Modern Circle Coffee Shop Logo.png"
+          alt="Cafe Logo"
+          class="logo"
+        />
+        <h2>Your Profile</h2>
+        <p>Update your account details below.</p>
+        <form id="profile-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value=""
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="" required />
+          </div>
+          <div class="form-group">
+            <label for="role">Role</label>
+            <input
+              type="text"
+              id="role"
+              name="role"
+              value="Customer"
+              readonly
+            />
+          </div>
+          <button type="submit" class="btn">Update Profile</button>
+        </form>
+        <div class="links">
+          <a href="../HTML/dashboard.html">Back to Dashboard</a> |
+          <a href="../index.html">Back to Menu</a>
+        </div>
+        <footer class="footer">
+          <p>Skyline Coffee Shop - Where Every Sip Tells a Story</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

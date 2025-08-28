@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Active Orders - Skyline Coffee Shop</title>
+    <link rel="stylesheet" href="../CSS/staff-active-orders.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="orders-box">
+        <img
+          src="../Images/Brown Modern Circle Coffee Shop Logo.png"
+          alt="Cafe Logo"
+          class="logo"
+        />
+        <h2>Active Orders</h2>
+        <p>View and manage active customer orders.</p>
+        <h3>Our Menu</h3>
+        <div class="menu-section">
+          <table id="menu-table">
+            <thead>
+              <tr>
+                <th>Photo</th>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price (BDT)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="../Images/coffee.png"
+                    alt="Coffee"
+                    class="menu-img"
+                  />
+                </td>
+                <td>Coffee</td>
+                <td>Rich, aromatic espresso blend</td>
+                <td>180</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="../Images/Tea.png" alt="Tea" class="menu-img" />
+                </td>
+                <td>Tea</td>
+                <td>Classic milk tea</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="../Images/Latte.png" alt="Latte" class="menu-img" />
+                </td>
+                <td>Latte</td>
+                <td>Creamy espresso with steamed milk</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../Images/Croissant.png"
+                    alt="Croissant"
+                    class="menu-img"
+                  />
+                </td>
+                <td>Croissant</td>
+                <td>Freshly baked croissants</td>
+                <td>220</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Active Orders</h3>
+        <div class="order-list">
+          <table id="order-table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>Coffee</td>
+                <td>2</td>
+                <td>Preparing</td>
+                <td><button class="btn update-btn">Update</button></td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>Latte</td>
+                <td>1</td>
+                <td>Ready</td>
+                <td><button class="btn update-btn">Update</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="links">
+          <a href="../HTML/staff-orders.html">Back to Order Menu</a>
+        </div>
+        <footer class="footer">
+          <p>Skyline Coffee Shop - Where Every Sip Tells a Story</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
