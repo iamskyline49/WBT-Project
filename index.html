@@ -15,89 +15,97 @@
           class="logo"
         />
         <h2>Welcome to Skyline Coffee Shop</h2>
-        <p>Explore our delicious menu and join us to place your order!</p>
+        <p>Discover amazing coffee experiences and exclusive offers!</p>
         <div class="action-buttons">
-          <button
-            onclick="window.location.href='../WBT-Project/HTML/Login.html'"
-            class="btn"
+          <a href="../WBT-Project/HTML/login.html"
+            ><button class="btn">Login</button></a
           >
-            Login
-          </button>
-          <button
-            onclick="window.location.href='../WBT-Project/HTML/Register.html'"
-            class="btn"
+          <a href="../WBT-Project/HTML/menu.html"
+            ><button class="btn">Menu</button></a
           >
-            Register
-          </button>
         </div>
-        <h3>Our Menu</h3>
-        <div class="menu-section">
-          <table id="menu-table">
-            <thead>
-              <tr>
-                <th>Photo</th>
-                <th>Item</th>
-                <th>Description</th>
-                <th>Price (BDT)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img
-                    src="../WBT-Project/Images/coffee.png"
-                    alt="Coffee"
-                    class="menu-img"
-                  />
-                </td>
-                <td>Coffee</td>
-                <td>Rich, aromatic espresso blend</td>
-                <td>180</td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="../WBT-Project/Images/Tea.png"
-                    alt="Tea"
-                    class="menu-img"
-                  />
-                </td>
-                <td>Tea</td>
-                <td>Classic milk tea</td>
-                <td>120</td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="../WBT-Project/Images/Latte.png"
-                    alt="Latte"
-                    class="menu-img"
-                  />
-                </td>
-                <td>Latte</td>
-                <td>Creamy espresso with steamed milk</td>
-                <td>250</td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="../WBT-Project/Images/Croissant.png"
-                    alt="Croissant"
-                    class="menu-img"
-                  />
-                </td>
-                <td>Croissant</td>
-                <td>Freshly baked croissants</td>
-                <td>220</td>
-              </tr>
-            </tbody>
-          </table>
+
+        
+        <h3>Special Offers</h3>
+        <div class="offers-section">
+          <div class="offer-card">
+            <div class="offer-badge">20% OFF</div>
+            <img
+              src="../WBT-Project/Images/coffee.png"
+              alt="Premium Coffee"
+              class="offer-img"
+            />
+            <h4>Premium Coffee Blend</h4>
+            <p class="offer-description">
+              Rich, aromatic espresso blend crafted from the finest beans
+            </p>
+            <div class="price-section">
+              <span class="original-price">৳180</span>
+              <span class="discounted-price">৳144</span>
+            </div>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-badge">Buy 2 Get 1</div>
+            <img
+              src="../WBT-Project/Images/latte.png"
+              alt="Signature Latte"
+              class="offer-img"
+            />
+            <h4>Signature Latte</h4>
+            <p class="offer-description">
+              Creamy espresso with perfectly steamed milk and beautiful latte
+              art
+            </p>
+            <div class="price-section">
+              <span class="offer-text">3 for ৳500</span>
+            </div>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-badge">15% OFF</div>
+            <img
+              src="../WBT-Project/Images/croissant.png"
+              alt="Fresh Croissants"
+              class="offer-img"
+            />
+            <h4>Fresh Croissants</h4>
+            <p class="offer-description">
+              Freshly baked, buttery croissants perfect with your morning coffee
+            </p>
+            <div class="price-section">
+              <span class="original-price">৳220</span>
+              <span class="discounted-price">৳187</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Added why choose us section -->
+        <div class="features-section">
+          <h3>Why Choose Skyline Coffee Shop?</h3>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">☕</div>
+              <h5>Premium Quality</h5>
+              <p>Sourced from the finest coffee beans worldwide</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🕒</div>
+              <h5>Fresh Daily</h5>
+              <p>Roasted fresh every morning for the perfect taste</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">👨‍🍳</div>
+              <h5>Expert Baristas</h5>
+              <p>Skilled craftsmen creating your perfect cup</p>
+            </div>
+          </div>
+        </div>
+
         <footer class="footer">
           <p>Skyline Coffee Shop - Where Every Sip Tells a Story</p>
         </footer>
       </div>
     </div>
-    <script src="../js/index.js"></script>
   </body>
 </html>
