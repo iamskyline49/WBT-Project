@@ -5,62 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Provide Feedback - Skyline Coffee Shop</title>
     <link rel="stylesheet" href="../CSS/customer-feedback.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../HTML/menu.html">Menu</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li><a href="../HTML/profile.html">Profile</a></li>
+        </ul>
+      </nav>
       <div class="feedback-box">
-        <img
-          src="../Images/Brown Modern Circle Coffee Shop Logo.png"
-          alt="Cafe Logo"
-          class="logo"
-        />
-        <h2>Provide Feedback</h2>
-        <p>Share your experience with us!</p>
-        <form id="feedback-form">
-          <div class="form-group">
-            <label for="rating">Rating</label>
-            <div class="star-rating">
-              <input
-                type="radio"
-                name="rating"
-                id="star5"
-                value="5"
+        <div class="hero-section">
+          <img
+            src="../Images/Brown Modern Circle Coffee Shop Logo.png"
+            alt="Cafe Logo"
+            class="logo"
+          />
+          <h1>Provide Feedback</h1>
+          <p>Share your experience with us at Skyline Coffee Shop!</p>
+        </div>
+        <section class="feedback-section">
+          <h2>Your Feedback</h2>
+          <form id="feedback-form">
+            <div class="form-group">
+              <label for="rating">Rating</label>
+              <div class="star-rating">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="star5"
+                  value="5"
+                  required
+                /><label for="star5">★</label>
+                <input type="radio" name="rating" id="star4" value="4" /><label
+                  for="star4"
+                  >★</label
+                >
+                <input type="radio" name="rating" id="star3" value="3" /><label
+                  for="star3"
+                  >★</label
+                >
+                <input type="radio" name="rating" id="star2" value="2" /><label
+                  for="star2"
+                  >★</label
+                >
+                <input type="radio" name="rating" id="star1" value="1" /><label
+                  for="star1"
+                  >★</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="5"
                 required
-              /><label for="star5">★</label>
-              <input type="radio" name="rating" id="star4" value="4" /><label
-                for="star4"
-                >★</label
-              >
-              <input type="radio" name="rating" id="star3" value="3" /><label
-                for="star3"
-                >★</label
-              >
-              <input type="radio" name="rating" id="star2" value="2" /><label
-                for="star2"
-                >★</label
-              >
-              <input type="radio" name="rating" id="star1" value="1" /><label
-                for="star1"
-                >★</label
-              >
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Feedback</button>
+          </form>
+          <div class="links">
+            <a href="../HTML/customer-order.html">Back to Menu</a> |
+            <a href="../index.html">Back to Home</a>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="footer-section" id="contact-section">
+              <h3>Contact Us</h3>
+              <p>
+                Email:
+                <a href="mailto:info@skylinecoffee.com"
+                  >info@skylinecoffee.com</a
+                >
+              </p>
+              <p>Phone: <a href="tel:+8801234567890">+880 123 456 7890</a></p>
+              <p>Address: 123 Skyline Avenue, Dhaka</p>
+            </div>
+            <div class="footer-section" id="about-section">
+              <h3>About Us</h3>
+              <p>
+                We are passionate about serving the finest coffee, crafted with
+                love and expertise. Join us for a unique coffee experience!
+              </p>
+            </div>
+            <div class="footer-section">
+              <h3>Newsletter</h3>
+              <p>Subscribe for exclusive offers!</p>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="newsletter-input"
+              />
+              <button class="btn newsletter-btn">Subscribe</button>
+            </div>
+            <div class="footer-section">
+              <h3>Follow Us</h3>
+              <div class="social-links">
+                <a
+                  href="https://facebook.com"
+                  class="social-icon"
+                  aria-label="Facebook"
+                >
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
+                    alt="Facebook Logo"
+                    class="social-logo"
+                  />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  class="social-icon"
+                  aria-label="Instagram"
+                >
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                    alt="Instagram Logo"
+                    class="social-logo"
+                  />
+                </a>
+                <a href="https://x.com" class="social-icon" aria-label="X">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/ffffff/x.png"
+                    class="social-logo"
+                  />
+                </a>
+              </div>
             </div>
           </div>
-          <div class="form-group">
-            <label for="comments">Comments</label>
-            <textarea
-              id="comments"
-              name="comments"
-              rows="5"
-              required
-            ></textarea>
+          <div class="footer-bottom">
+            <p>Skyline Coffee Shop - Where Every Sip Tells a Story</p>
+            <p>&copy; 2025 Skyline Coffee Shop. All rights reserved.</p>
           </div>
-          <button type="submit" class="btn">Submit Feedback</button>
-        </form>
-        <div class="links">
-          <a href="../HTML/customer-order.html">Back to Menu</a>
-        </div>
-        <footer class="footer">
-          <p>Skyline Coffee Shop - Where Every Sip Tells a Story</p>
         </footer>
       </div>
     </div>
